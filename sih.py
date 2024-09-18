@@ -148,4 +148,5 @@ def main():
             st.video(output_video_path)
 
 if __name__ == "__main__":
-    main()
+    main() 
+    # to start the functions
