@@ -138,8 +138,8 @@ def main():
 
         if transcript:
             # Set the media directory path and output video path
-            media_dir = r"C:\Users\ELCOT\Downloads\sih-1715"  # Adjust to your media folder
-            output_video_path = r"C:\\Users\\ELCOT\\Downloads\\sih-1715\\output.mp4"
+            media_dir = r"sih-1715"  # Adjust to your media folder
+            output_video_path = r"sih-1715\output.mp4"
 
             # Generate the combined video with English captions only
             generate_combined_video(transcript, media_dir, output_video_path)
