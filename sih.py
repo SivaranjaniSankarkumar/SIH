@@ -5,7 +5,6 @@ import numpy as np
 from moviepy.editor import VideoFileClip, ImageClip, concatenate_videoclips, CompositeVideoClip, AudioFileClip
 import speech_recognition as sr
 import tempfile
-
 from datetime import datetime
 
 # Function to recognize speech from an audio file and convert it to text
@@ -93,10 +92,8 @@ def generate_combined_video(transcript, media_dir, output_video_path, audio_file
         final_clip = concatenate_videoclips(clips, method="compose")
 
         # Combine video with audio
-        audio = AudioSegment.from_file(audio_file_path)
-        audio_path = output_video_path.replace(".mp4", ".mp3")
-        audio.export(audio_path, format="mp3")
-        final_clip.audio = AudioFileClip(audio_path)
+        audio = AudioFileClip(audio_file_path)
+        final_clip = final_clip.set_audio(audio)
         
         final_clip.write_videofile(output_video_path, codec="libx264", audio_codec="aac")
         st.write(f"Video created at: {output_video_path}")
@@ -184,8 +181,6 @@ def main():
     </style>
     """, unsafe_allow_html=True
 )
-
-        
 
     # Sidebar with menu options
     with st.sidebar:
