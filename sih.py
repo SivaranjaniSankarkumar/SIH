@@ -5,7 +5,7 @@ import numpy as np
 from moviepy.editor import VideoFileClip, ImageClip, concatenate_videoclips, CompositeVideoClip, AudioFileClip
 import speech_recognition as sr
 import tempfile
-from pydub import AudioSegment
+
 from datetime import datetime
 
 # Function to recognize speech from an audio file and convert it to text
