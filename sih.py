@@ -419,5 +419,15 @@ def main():
             
             # Display the generated video
             st.video(output_video_path)
+    with tab5:
+    # Custom subheader for Demo Video with white color
+         st.markdown('<h2 class="custom-subheader-demo" style="color: white;">🎬 Demo Video</h2>', unsafe_allow_html=True)
+    
+    # Play Video button in white
+         st.markdown('<button class="custom-play-video" style="color: white; background-color: transparent; border: none;">▶ Play Video</button>', unsafe_allow_html=True)
+
+    # Display YouTube video link
+         youtube_url = "https://youtu.be/3wU3qYoQlxU"  # Replace with your actual YouTube link
+         st.markdown(f'<p class="custom-youtube-link" style="color: white;"><a href="{youtube_url}" target="_blank" style="color: white;">Watch on YouTube</a></p>', unsafe_allow_html=True)
 if __name__ == "__main__":
     main()
