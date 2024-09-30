@@ -373,7 +373,7 @@ def main():
         st.subheader("📚 ISL Libraries")
 
     # Set the media directory path
-        media_dir = r"C:\Users\ADMIN\OneDrive\Desktop\sih-1715" # Adjust your media folder path
+        media_dir = r"sih-1715" # Adjust your media folder path
 
     # Check if the directory exists
         if os.path.exists(media_dir):
