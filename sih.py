@@ -332,7 +332,7 @@ def main():
         """, unsafe_allow_html=True
     )
    
-    tab1, tab2, tab3, tab4 = st.tabs(["Train Announcements", "Train Schedules", "ISL Libraries", "ISL video"])
+    tab1, tab2, tab3, tab4, tab5 = st.tabs(["Train Announcements", "Train Schedules", "ISL Libraries", "ISL video", "Demo Video"])
 
     with tab1:
     # Custom subheader for Train Announcements
