@@ -412,7 +412,7 @@ def main():
 
             # Define the path to save the video
             output_video_path = os.path.join(tempfile.gettempdir(), f"output_{datetime.now().strftime('%Y%m%d_%H%M%S')}.mp4")
-            media_dir = r"C:\Users\ADMIN\OneDrive\Desktop\sih-1715" # Adjust your media folder path
+            media_dir = r"sih-1715" # Adjust your media folder path
 
             # Call your function to generate video
             generate_combined_video(st.session_state['transcript'], media_dir, output_video_path, st.session_state['audio_file'])
