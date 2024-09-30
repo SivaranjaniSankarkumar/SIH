@@ -129,7 +129,7 @@ def get_image_as_base64(image_path):
         return None
 
 # Correct path to your local image (modify this path as needed)
-image_path = r"dimmer_brightness_railway_station.png""
+image_path = "dimmer_brightness_railway_station.png""
 
 
 
